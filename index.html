@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Hunter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Job Hunter</h1>
+    <p>Jobs from famous stores, restaurants, and warehouses</p>
+  </header>
+
+  <main class="container">
+    <section class="filters">
+      <h2>Categories</h2>
+      <div class="chips">
+        <button class="chip active" data-category="all">All</button>
+        <button class="chip" data-category="retail">Retail</button>
+        <button class="chip" data-category="restaurant">Restaurants</button>
+        <button class="chip" data-category="warehouse">Warehouses</button>
+      </div>
+    </section>
+
+    <section class="filters">
+      <h2>Companies</h2>
+      <div class="chips" id="companyFilters"></div>
+    </section>
+
+    <section>
+      <h2>Available Jobs</h2>
+      <div id="jobsList" class="jobs-grid"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
