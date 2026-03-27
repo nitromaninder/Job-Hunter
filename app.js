@@ -86,7 +86,7 @@ function renderJobs() {
     <strong>${job.company}</strong><br>
     ${job.location}<br>
     ${job.category}<br>
-    Distance from Coventry City Centre: ${getDistanceText(job)}
+    Distance from Coventry City Centre: ${job.distance || "Distance unknown"}
   </div>
   <a class="open-btn" href="${job.url}" target="_blank" rel="noopener noreferrer">
     Open Job
