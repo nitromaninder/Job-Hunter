@@ -3,39 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Job Hunter</title>
+  <title>Job Hunt</title>
+  <meta name="apple-mobile-web-app-title" content="JobHunt">
   <link rel="apple-touch-icon" href="app-icon-v2.png">
   <link rel="icon" href="app-icon-v2.png">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <img src="logo.png" alt="Job Hunter Logo" class="logo" />
-    <h1>Job Hunter</h1>
-    <p>Jobs from famous stores, restaurants, and warehouses</p>
-  </header>
+  <div id="splash-screen">
+    <img src="app-icon-v2.png" alt="JobHunt Logo" class="splash-logo" />
+    <h1>JobHunt</h1>
+  </div>
 
-  <main class="container">
-    <section class="filters">
-      <h2>Categories</h2>
-      <div class="chips">
-        <button class="chip active" data-category="all">All</button>
-        <button class="chip" data-category="retail">Retail</button>
-        <button class="chip" data-category="restaurant">Restaurants</button>
-        <button class="chip" data-category="warehouse">Warehouses</button>
+  <div id="app-content" class="hidden">
+    <header class="topbar">
+      <div class="brand">
+        <img src="app-icon-v2.png" alt="JobHunt Logo" class="top-logo" />
+        <span class="brand-name">JobHunt</span>
       </div>
-    </section>
+    </header>
 
-    <section class="filters">
-      <h2>Companies</h2>
-      <div class="chips" id="companyFilters"></div>
-    </section>
+    <main class="container">
+      <section class="filters">
+        <h2>Categories</h2>
+        <div class="chips">
+          <button class="chip active" data-category="all">All</button>
+          <button class="chip" data-category="retail">Retail</button>
+          <button class="chip" data-category="restaurant">Restaurants</button>
+          <button class="chip" data-category="warehouse">Warehouses</button>
+        </div>
+      </section>
 
-    <section>
-      <h2>Available Jobs</h2>
-      <div id="jobsList" class="jobs-grid"></div>
-    </section>
-  </main>
+      <section class="filters">
+        <h2>Companies</h2>
+        <div class="chips" id="companyFilters"></div>
+      </section>
+
+      <section>
+        <h2>Available Jobs</h2>
+        <div id="jobsList" class="jobs-grid"></div>
+      </section>
+    </main>
+  </div>
 
   <script src="app.js"></script>
 </body>

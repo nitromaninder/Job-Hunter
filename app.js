@@ -117,3 +117,13 @@ fetch("jobs.json")
     console.error("Error loading jobs:", err);
     jobsList.innerHTML = "<p>Could not load jobs.</p>";
   });
+  
+  window.addEventListener("load", () => {
+  setTimeout(() => {
+    const splash = document.getElementById("splash-screen");
+    const appContent = document.getElementById("app-content");
+
+    if (splash) splash.style.display = "none";
+    if (appContent) appContent.classList.remove("hidden");
+  }, 1400);
+});
